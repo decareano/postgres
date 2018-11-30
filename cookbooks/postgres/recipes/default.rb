@@ -23,3 +23,7 @@ service "postgresql-9.6" do
   action [:enable, :start ]
 end
 
+service 'memcached' do
+  action :nothing
+end
+
